@@ -7,3 +7,13 @@ nfDefinition <- nimbleFunction(
     ##where = topenv()
 )
 
+
+nextFunction <- function() {
+    nfDef <- nimbleFunction(
+        setup = function() {},
+        run = function() print('this is another message')
+    )
+    nfDef
+}
+
+
