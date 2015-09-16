@@ -12,6 +12,7 @@ nextFunction <- function() {
     nfDef <- nimbleFunction(
         setup = function() {},
         run = function() print('this is another message')
+        ##where = globalenv()
     )
     nfDef
 }
